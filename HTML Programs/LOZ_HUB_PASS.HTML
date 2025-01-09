@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Form</title>
+    <style>
+        /* Center everything in the body */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Change the font */
+            background-color: #117e02; /* Optional: background color */
+        }
+
+        /* Center content within the form */
+        .container {
+            text-align: center; /* Center text inside container */
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white; /* Optional: white background for the form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+        }
+
+        /* Style the form and inputs */
+        label, button {
+            font-size: 18px; /* Change label and button font size */
+            margin-bottom: 10px;
+            display: block; /* Ensure button is on a new line */
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%; /* Make the input take full width */
+            max-width: 300px; /* Limit the max width */
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Change color on hover */
+        }
+
+        /* Style for the welcome section */
+        #welcome {
+            display: none; /* Initially hidden */
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter your password</h2> 
+        <form id="passwordForm">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Example JavaScript for client-side validation
+        document.getElementById('passwordForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let password = document.getElementById('password').value; // Get the entered password
+            if (password === "PointBreak") { // Check if the password is "PointBreak"
+                alert("Password is correct!");
+                document.getElementById('welcome').style.display = 'block'; // Show the welcome section
+                window.location.href = "W"; // Redirect to the new page
+            } else {
+                alert("Incorrect password!");
+            }
+        };
+    </script>
+</body>
+</html>

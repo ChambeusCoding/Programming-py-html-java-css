@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will I actually Do Work In Kruskie's Class?</title>
+    <style>
+        body {
+            font-family: 𝕰𝖎𝖙𝖍𝖊𝖗, (Edge 12, Firefox 1, Safari 1, Chrome 1, IE 3, Opera 3);
+            margin: 50px;
+            background-color: black;
+            color:chocolate
+        }
+        button {
+            padding: 30px;
+            font-size: 24px;
+            cursor: pointer;
+            color:coral
+        }
+        #result {
+            margin-top: 35px;
+            font-size: 24px;
+            font-weight: bold;
+            color:coral
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will I actually Do Work In Kruzkies Class?</h1>
+
+    <!-- Button to generate random game -->
+    <button onclick="generateRandomGame()">Will I?</button>
+
+    <div id="result"></div>
+
+    <script>
+        function generateRandomGame() {
+            // List of only two games
+            const games = ['Unfortunately', 'Hell NAh'];
+
+            // Pick a random game
+            const randomGame = games[Math.floor(Math.random() * games.length)];
+
+            // Initial result message
+            let message = `Should I?: ${randomGame}<br><br>`;
+
+            // Conditional logic based on the random game
+            if (randomGame === 'Unfortunately') {
+                message += "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO";
+            } else if (randomGame === 'Hell Nah') {
+                message += "YAAAAAAAAAAAAAAAAAAAAAAAAAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY";
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

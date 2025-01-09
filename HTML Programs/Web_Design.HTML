@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Background Change Automatic - Sagar Developer, Layout 1</title>
+<!These are the sections of the layout of the main page>
+        
+<script>
+    // Function to ask for the password and validate it
+    function checkPassword() {
+        var password = prompt("Please enter the password:");
+
+        // Check if the password is correct
+        if (password === "yourPassword") {
+            // Reveal the page content and redirect
+            document.getElementById("content").style.display = "block";
+        } else {
+            // If the password is incorrect, show an alert
+            alert("Incorrect password! Please try again.");
+            // Ask again
+            checkPassword();
+        }
+    }
+
+    // Call the function when the page is loaded
+    window.onload = function() {
+        // Initially hide all content
+        document.getElementById("content").style.display = "none";
+        // Ask for the password
+        checkPassword();
+    };
+</script>
+
+<style type="text/css">
+
+            body{
+                background-image: url('back.png')
+            }
+            p {
+                color:aliceblue;
+            }
+            *
+            {
+                padding:0px;
+                box-sizing:border-box;
+                
+            }
+            #logo-div
+            {
+                width:100%;
+                height:50px;
+                padding-left:2%;
+                line-height:50px;
+                margin-bottom:10px;
+                background-color:rgb(250, 114, 2);
+            }
+            
+            #nav-div
+            {
+                width:100%;
+                min-height:30px;
+                line-height:30px;
+                text-align:center;
+                margin-bottom:10px;
+                background-color:bisque;
+            }
+
+            #header-div
+            {
+              width:100%;
+              min-height:400px;
+              min-width:800px;
+              text-align:right;
+              line-height:50px;
+            }
+
+            #main-div
+            {
+                width:100%;
+                margin-bottom:10px
+            }
+
+            #sidebar-div
+            {
+                width:20%;
+                min-height:300px;
+                float:left;
+                text-align:center;
+                line-height:300px;
+                background-color:rgb(77, 5, 5);
+            }
+
+            #body-div
+            {
+                width:80%;
+                min-height:500px;
+                float:right;
+                text-align:center;
+                line-height:25px;
+                background-color:darkred;
+            }
+            
+            .clearfix::after
+            {
+                content:"";
+                display:block;
+                clear:both;
+            }
+
+            #footer-div
+            {
+                width:100%;
+                min-height:50px;
+                text-align:center;
+                line-height:50px;
+                background-color:bisque;
+            }
+
+            #back-div
+            {
+                width:100%;
+                min-width:1920;
+                min-height:1080px;
+            }
+
+            .logo{
+                text-align:left;
+            }
+
+        </style>
+    </head>
+    <body>
+<!These are the division statements of these sections>
+    <div class="back">
+        
+    </div>
+
+
+    <div id="logo-div">
+        <img src="Techno_Man.jpg" alt="logo" width="125" height="50">
+        <p style="color: rgb(255, 51, 0); text-align:center;">A Chambeus Coding Production:</p>
+    </div>
+    <div id="container">
+        <p style="color: rgb(255, 51, 0); text-align:center; font-weight: bold; font-size: 48px;">The Tragedy of the Hero of Time</p>
+        <p style="color: skyblue; text-align:left; font-weight: bold; font-size: 24px;">By Chambeus</p>
+        <p style="color: skyblue; text-align:right; font-weight: bold; font-size: 24px;">"Borrowed" Transcript By Zeltik</p>
+       
+    </div>
+    
+    <div id="header-div">
+        <img src="321998.jpg" alt="Sample Image" width="1920" height="1000">
+
+    </div>
+    
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            <img src="ME.png" alt="SidePic" width="450" height="500">
+        </div> 
+        <div id="body-div">
+            <p style="color: rgb(37, 190, 32); text-align:right; font-weight: bold; font-size: 12px;"> Before the King unified Hyrule, there was  a fierce civil war. One day, to escape from  
+                the horrors of the war, a Hylian mother and  her infant son entered the forbidden forest.  
+                The mother was gravely injured. Her only choice  was to entrust the child to the Great Deku tree,  
+                the guardian spirit of the forest. After the  mother passed away, the boy was named Link  
+                and raised as a Kokiri. Since Link wasn’t a true  Kokiri, he didn’t have a fairy companion like
+                his peers. That is until the day Ganondorf cursed the  Great Deku Tree, Link's only remaining parental figure, 
+                resulting in the beginning of his journey.  
+                He then leaves the only environment he’s ever known to go help save some kingdom foreign to him.  
+                As Link’s journey progresses he unintentionally travels 
+                7 years into the future, and after  eventually defeating Ganondorf, Zelda sends him back to his original time to regain his lost  childhood.
+                 Once he’s sent back in time, Navi flies off and leaves Link without a single word. Link’s quest led him to be known as the legendary Hero of Time. 
+                Well, that is in the Adult Timeline.  But Link is now in a time where none of his efforts mattered and the peace he fought so hard  to obtain no longer exists. 
+                In addition to this, everyone he met along the way no longer has any  memory of him. Just imagine how traumatic this must have been for a young boy. 
+                Link’s entire way  of life was suddenly snatched from him. He learns that he isn’t a Kokiri like all of his friends.  
+                His only parental figure, The Great Deku Tree, perishes and tells Link that he is responsible for  saving Hyrule from the greatest plague of evil.  
+                    As a boy Link dreamed of leaving the forest  and being heroic, but when the time came  
+                Link didn’t really have a choice but to  become the Hero of Time and save Hyrule.  
+                Unfortunately the life of a hero doesn’t always  come without an insurmountable toll. When he’s  
+                in the future he learns of his parents’ deaths, and must realize he doesn’t have any true family  
+                to return to once his quest is over. And once  it is, Navi, his companion and the only one  
+                left who has witnessed everything he has been  through, abandons him without any explanation.  
+                During his journey, Link was constantly  burdened with helping others and becoming  
+                the legendary Hero of Time, and thus he never had  the opportunity to process all of his traumas.  
+                Even after the events shown in Ocarina of Time,  Link still didn’t get much opportunity to solve  
+                his own troubles. Ganondorf was still a threat  to his current time and needed to be stopped,  
+                so Link immediately sought out the young  Princess Zelda “for the first time”  
+                to explain what had happened and inform  her of Ganondorf’s treacherous plot.  
+                They devised a plan for Link to take the Ocarina  of Time far from Hyrule to guarantee Ganondorf  
+                never has the opportunity to open the gate to the  Sacred Realm. We can infer from Zelda’s expressed emotions during his 
+                departure that they spent a  short while together. It’s likely that the two  
+                played around Castle Town or Hyrule Field like  the children we sometimes forget that they are.  
+                Because Link has Epona when saying his goodbye  to Zelda he must have also visited Malon sometime  
+                between warning Zelda and his departure. But  Epona was Malon’s favorite horse and Malon  
+                didn’t have any memories of Link anymore, so Link  must have spent time befriending her or played  
+                Epona’s song on his Ocarina to prove his story  in order to convince her to let him take Epona.  
+                Link had been through so much during his quest,  that it makes sense that he’d gladly seize the  
+                opportunity to briefly push aside his mission and  for once be able to enjoy time with his friends.  
+                    Although this was likely the happiest  Link had been in a long time,  
+                it couldn’t last. His quest was not over.  He still needed to take the Ocarina of Time  
+                away from Hyrule until Ganondorf had been  defeated for good. Link also desired to find  
+                his former companion Navi, and thus he set  out on his secret and personal journey.  
+                Excluding the companionship  of Epona, Link was once again  
+                all alone. Months passed as Link aimlessly  wandered further from Hyrule in search of Navi.  
+                With no end to his journey in sight, it’s probable  that Link spent much of his time soulsearching. After all, what else was there for  him to do? He had lost his home,  
+                friends, and sense of identity. Since his primary  objective was to find Navi and considering the  
+                emotional burden Link must be bearing for the  aforementioned reasons, Link probably was thinking  
+                to himself “Navi, why did you leave? Why did you  not stay with me?” The young boy felt abandoned.  
+                His closest companion, the friend who knew his  current struggles better than anyone else was  
+                now gone and despite all his efforts to find  her, it seemed as if she had left for good.  
+                “What is my purpose here?” he asked himself.  As a boy he dreamed of leaving Kokiri forest  
+                and slaying giant monsters, so that part  of becoming an adventurer excited him.  
+                However, being an adventurer comes with more than  slaying monsters. A true hero must be strong in  
+                mind and body, as well as selfless. But it doesn’t  matter how strong and how selfless someone is,  
+                Link kept fighting and putting other people’s  wellbeing before his own and it got to him. He  
+                hardly ever had the time to even process the grief  he felt and consider if he was truly happy with  
+                his life. Link knew that he was doing the right  thing by taking care of the people of Hyrule,  
+                but did doing the right thing make him happy? What  does make him happy? Does he even know himself?  
+                If he did, would it make others happy too?  Why is he fighting so hard when he doesn’t  
+                even know himself? He has no family to return to  once his quest is over, and most of his friends  
+                no longer knew who he was. And despite rebuilding  friendships with Zelda and Malon, they no longer  
+                share the memory’s he had with them. What was  he going to do when he finally returned home?  
+                “Where do I belong?” he thought. This  anxiety was driving him crazy.  
+                Exploring "Termina"
+                While in his stupor, Link had dawdled into a  mysterious forest. Suddenly two fairies startle  
+                Epona who then proceeds to knock Link off her  back. He’s then robbed by the masked Skull Kid  
+                who hijacks Epona. Link chases after them but  then somehow finds himself in this new parallel 
+                world known as Termina. Once again he has no  choice but to prevent everyone from their demise.  
+                The land is foreign to him, yet it  feels familiar, but twisted and warped.  
+                He recognizes nearly every face he  encounters, yet they are strangers to him.  
+                Everywhere he goes in Termina,  he meets people who are grieving.  
+                Most of whom had their own tribulations in  addition to the seemingly unavoidable apocalypse.  
+                It seems as if Link’s experience in Termina would  exacerbate Link’s pre-existing anxiety, but what  
+                if Link’s bizarre new journey isn’t a literal  journey at all? What if it’s actually Link’s  
+                subconscious finally processing his trauma? Before we continue, it’s important to disclose  
+                that we will continue the narrative under  the pretense that the plot of Majora’s Mask  
+                was all a post-traumatic allegorical dream  that Link had a while after leaving Hyrule.  
+                Whether Termina is a real world or not is widely  debated, so to justify the stance used in this  
+                video, you can refer to an old video I made  which justifies the possibility that Termina  
+                may all be all in Link’s head. I’ll also be making  a new video in the near future which will go into  
+                much more detail, so if you have enjoyed this  video so far, please leave a like, subscribe to  
+                the channel, and enable notifications so you’ll  know when more videos like this are published…  
+                The 4 Foundations of Link's Trauma
+                Under the pretense that Termina was a  dream or figment of Link’s imagination  
+                created by his subconscious to process his trauma,  
+                everything he experiences correlates to  one of the foundations of his anxiety.  
+                These four foundations are his abandonment,  his duty as a hero, its lack of balance with  
+                his duty to take care of himself, and his lack of  identity. While inside of the moon, each of the 4
+                moon children ask Link an eerie yet philosophical  question relating to each of these themes,  
+                which is Link’s subconscious calling attention  to the real problems plaguing his mind.  
+                Abandonment
+                
+                
+                “Your friends… What kind of… people are they?  
+                I wonder… Do those people…  think of you… as a friend?”
+                
+                  
+                The first and perhaps most dominant theme is  abandonment, or the loneliness of a child.  
+                
+                
+                “Your friends… Do those people… think of you…  as a friend?”
+                
+                
+                directly calls to the Skull Kid’s  
+                insecurity about his friendship with the giants.  The story of the Skull Kid is told in the Legend  
+                of The Four Giants. He is depicted as a little  imp who had been friends with the giants since  
+                they supposedly created the four regions of their  world. When the giants left for their slumber,  
+                the Skull Kid was shocked and saddened  for he did not understand why they left.  
+                “Why must you leave? Why do you not stay?” said  the childhood friend, feeling neglected. In this  
+                way the Skull Kid’s story is an allegory for Link  and his loss of Navi. Neither understood why their  
+                friends had left them all alone, with nothing that  would heal, guide, or save them from their grief.  
+                However the Skull Kid, who is associated with  Majora’s Mask, responded to their grief by  
+                lashing out at others and being consumed by  their emotions. Link on the other hand, who 
+                also corresponds to the Fierce Deity, pushed his  grief aside to continue helping others at his own  
+                expense. The Fierce Deity mask is insinuated to be  as dangerous as Majora’s Mask, so is it possible  
+                the two masks represent opposite yet equally  destructive methods to coping with grief?  
+                Duty to Others
+                
+                
+                “The right thing… what is it? I  wonder… If you do the right thing…  
+                does it really make… everybody… happy?”  
+                
+                
+                Link is naturally a selfless child,  willing to help everyone he meets.  
+                All people from the four corners of  Termina were plagued with misfortune.  
+                Whether it be a goron child longing for his  lost father, a young ranch owner struggling  
+                to make ends meet, or star-crossed lovers  kept apart by a series of tragic events,  
+                Link went out of his way to relieve their  troubles even though he didn’t have to. 
+                Not considering the premise that there isn’t a  known way to leave Termina since it’s a dream,  
+                Link could have left Termina as soon as he  retrieved the Ocarina of Time and found Epona  
+                at Romani Ranch. But he didn’t because he  knew that helping the inhabitants of Termina  
+                was the right thing to do. He made everybody  else happy…but did it make him happy?  
+                Duty to Self
+                
+                
+                “You… what makes you… happy? I wonder… what makes  you happy… does it make… others happy, too?”
+                
+                  
+                Link had lost his entire way of life and didn’t  know what made him happy. And even if he did,  
+                would he have to give up his duty as the hero  and stop making others happy so he could be happy  
+                himself? After defeating Majora and preventing  the moon from destroying all of Termina,  
+                all Link has left are the four transformation  masks. When he wears one of the masks,  
+                he screams in agony because he experiences all  the memories of the mask’s original soul merging  
+                with his own all at once. Who’s to say they didn’t  grow together as Link progressed through Termina?  
+                The Happy Mask Salesman states that these  masks are filled with happiness, and that  
+                it is truly a good happiness. Link healed the  souls within the mask, causing their happiness.  
+                If Link and the original souls grew together  through his quest, their journey to happiness  
+                could have been a model for Link to help  him finally process his own trauma.  
+                Identity
+                
+                
+                “Your true face… what kind of… face is it?  I wonder… the face under the mask… is that…  
+                your true face?”
+                
+                
+                From when Link first enters Termina, he  
+                literally masks his own identity with the deceased  souls of Termina: the first being a young deku.  
+                Little is actually known about the poor Deku  child, but we do know that he was an innocent  
+                child like Link, except that his life was snatched  from him literally rather than figuratively.  
+                Immediately before crossing into Termina,  Link encounters the deceased deku scrub  
+                which is acknowledged to be “dark and gloomy…  almost like it could start crying any second…”  
+                In the context of the dream, this  sad tree is symbolic of Link’s grief.  
+                He had lost his entire way of life and all  friendships he had built had been erased.  
+                He felt as if he now lived in a void, consuming  everything he had ever known and loved.  
+                As Link looks into the deku scrub’s eyes, he is  staring into an empty husk; a literal reflection  
+                of the void within himself. The deku is both  found at the threshold of Termina and shows Link  
+                his need for self-healing, therefore marking the  beginning of his journey to filling his void.  
+                Link's Self-Discovery
+                The other identities Link adopts in  Termina, Darmani III and Mikau the Zora,  
+                coincidentally have a couple things in common with  Link. Darmani III was a goron hero from Snowhead  
+                who perished while trying to single-handedly  save his people from the eternal winter  
+                caused by the anomaly at Snowhead Temple.  Mikau likewise was the type who would try to  
+                help those he cared about at any cost. When his  lover’s eggs were stolen he tried to infiltrate  
+                the pirate’s fortress alone to retrieve them, but  was mutilated and left for dead in the Great Bay. 
+                Other than their heroic deeds, what do these  two characters have in common with Link? They  
+                tried to do it all on their own and suffered  for it. Link may have been successful with  
+                his quest unlike Darmani and Mikau, however  his life as he knew it had also been lost.
+                As Link put on these masks to walk in the  feet of these other heroes, he was actually  
+                reflecting upon his own life by living as others  that weren’t too different from himself. They were 
+                lost souls whose heroic deeds led to their own  grief. Link realized he was the one who was able  
+                to provide healing for them, so since they’re  so similar to him, he could heal himself.  
+                Despite dying in an attempt to  solve their communal threats alone,  
+                both Darmani and Mikau had strong relationships  with those in their communities. Link on the  
+                other hand was raised as a Kokiri, lost his father  figure, and didn’t learn he was a Hylian until it  
+                became his duty to save Hyrule from the greatest  source of evil. The only community he had ever  
+                been a part of was with the Kokiri and that was  not a life he could go back to. Link has always  
+                been a lone wolf, but through Darmani and Mikau,  Link learned that even lone wolves have a pack.  
+                He may not be from Hyrule but he is a Hylian.  They are his people and that is where he belongs. 
+                But Link barely got to know the people of Hyrule  as a whole during his quest. To him, the “people  
+                of Hyrule” were a much smaller group; his friends.  Thinking back on the days in Kokiri Forest,  
+                he was a part of something bigger than himself.  He had a duty to his fellow Kokiri to do chores  
+                and aid the Great Deku Tree, but these duties  were in balance with having a personal life  
+                unlike his current life. Some of his happiest  memories were of spending time with Saria.  
+                But his life in Kokiri forest was not a  life he could return to. He is growing up  
+                and life always brings unforeseen changes. Time  inevitably keeps marching forward, and with that,  
+                new responsibilities arise. Sometimes such duties  require that friends and loved ones part ways.  
+                
+                
+                "Whenever there is a meeting, a  parting is sure to follow. However,  
+                that parting need not last forever... Whether a  parting be forever or merely for a short time...  
+                That is up to you." 
+                
+                
+                Link made and then lost  his new friends on his journey through time,  
+                but no matter how short-lived the relationships  were, these friends were critical in shaping him  
+                into the hero he needed to be and were there  to support him when he needed it. Link had  
+                come to terms with being the Hero of Hyrule  and always having those duties to fulfill,  
+                while accepting that in order  to come to peace with himself,  
+                he also needed to reunite with his friends and  rekindle the friendships long forgotten.  
+                But there was still one friend Link did not have  the choice of reuniting with: Navi. He still did 
+                not understand why Navi had abandoned him, 
+                but  since the Giants had a reason for parting withthe Skull Kid, perhaps Navi too had a reason 
+                for  leaving him that he just didn’t understand yet.  
+                As Link thought about this he  realized he couldn’t let his  
+                insecurities become a self-destructive  obsession like with the Skull Kid,  
+                so he gained faith that Navi left him for a  noble reason and was finally able to let go.  
+                Link's Awakening
+                As Link opened his eyes once more, still in the  woods where he wandered, it all finally made  
+                sense to him. It had been many moons since he had  departed Hyrule. Frequently, ever since he left, 
+                he had been having recurring dreams where he  was in the bizarre yet familiar land of Termina.  
+                The dreams felt the same each time, yet he  experienced vastly different three-day cycles.  
+                Eventually he came to realize that these dreams  were an allegory created by his subconscious to  
+                reveal the sources of his grief. He now understood  who he was and how to fill the void within  
+                himself. It was then that Link decided it was time  for him to make his grand return to Hyrule.  
+                Beyond this point, the life of the Hero of Time  is a mystery, but there are a few known facts  
+                Link's Return - What Happened?
+                and a few hints that open up some possibilities.  It’s known that the Hero of Twilight is a direct  
+                descendent of the Hero of Time, so Link must  have eventually settled down and had children.  
+                The Hero of Twilight is also trained by  a spectral figure clad in knight’s armor  
+                known as the Hero’s Shade, who has been  confirmed to be the deceased Hero of Time.  
+                This means that at some point after having  children, Link met his demise in combat.  
+                Before he had left Hyrule, Link had alerted  Zelda and the King of Ganondorf’s plot,  
+                leading to a war between Hyrule and the Gerudo.  Looking at Hyrule later on in the Era of Twilight,  
+                it can be inferred that Hyrule sustained  great damage during the several years it  
+                took to finally capture Ganondorf. It’s unclear  whether the Hero of Time returned to Hyrule  
+                during or after this conflict had ended, but  regardless, it makes perfect sense that Link  
+                would become a knight to once again serve  this land that he had missed for so long.  
+                He was no longer the young child he was  when he left, so becoming a knight would  
+                earn him a living and put his heroic skills  and experience to good use. This would also  
+                allow for him to spend more time around Zelda  and enjoy living among those he cares for.  
+                While it’s impossible to determine  who Link started a family with,  
+                there are two popular theories. Some believe that  Link and Zelda would be a good match because of  
+                their close childhood bond. This works well with  the idea that Link became a knight promptly after  
+                returning to Hyrule because he would be able  to work around the castle and see Zelda daily.  
+                They finally had the time to grow  closer and eventually started a family.
+                However, as we said before, Link died  at some point after having children. If the war against Ganondorf was still going on,  
+                it’s possible Link was part of an expedition and was killed trying to apprehend Ganondorf. Another theory is that Link’s friendship with  
+                the red-headed farmgirl, Malon, became much more.  Lon Lon Ranch may have been attacked or destroyed  
+                in the war since it was a large source of Hyrule’s  supplies, leading Link and Malon to seek refuge.  
+                There’s the possibility that they moved to the  woods where Link had grown up and brought Malon’s  
+                ranching lifestyle with them leading to the  settlements that would later be known as Ordon  
+                Ranch and Ordon Village. After all, the Hero of  Twilight’s home has Kokiri-like architecture,  
+                and with the fact that he is a direct descendent  of the Hero of Time, it’s likely that the Hero  
+                of Time was its original owner. While living in  solidarity, Link and Malon would have begot a  
+                child, but as has been established, Link must  have perished unexpectedly. As his new home’s  
+                sole defender, perhaps Link was gravely wounded  trying to defend his family from a large monster  
+                from the woods. Or alternatively, if the war with  Gerudo was still ongoing, the kingdom of Hyrule  
+                may have pleaded for Link’s heroics to aid them in  capturing Ganondorf. Even with considering his new  
+                family and the danger he would be putting  himself into, Link has never been one to  
+                back down from stopping evil and helping those in  need. Tragically, this would be his downfall…  
+                After living a life full of sacrifice and anguish,  
+                Link finally learned how to be happy while  satisfying his duties, only to tragically perish,  
+                leaving his wife without a husband and his  children without a father. For nearly a century,  
+                the Hero of Time wandered Hyrule as a specter,  regretting not being able to pass on the lessons  
+                and skills he had learned during his life to those  who came after. That is until he met his heir,  
+                the Hero of Twilight, who eased his regrets and allowed him to finally rest.
+                
+                And that LOZ fans is the Tragedy of the Hero of Time</p>
+           
+
+        </div>
+    <div id="footer">
+        <h1></h1>
+    </div>
+    
+
+    </div>
+
+    </body>
+</html>

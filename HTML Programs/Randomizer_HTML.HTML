@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Game Selector</title>
+    <style>
+        body {
+            font-family: 𝕰𝖎𝖙𝖍𝖊𝖗, (Edge 12, Firefox 1, Safari 1, Chrome 1, IE 3, Opera 3);
+            margin: 20px;
+            background-color: black;
+            color:chocolate
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color:coral
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color:coral
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Game Selector</h1>
+
+    <!-- Button to generate random game -->
+    <button onclick="generateRandomGame()">Pick a Game</button>
+
+    <div id="result"></div>
+
+    <script>
+        function generateRandomGame() {
+            // List of games
+            const games = ['Hoi4', 'LOZ', 'R6', 'Randomly code', 'Unfortunately get some work done', 'Do my Podcast'];
+
+            // Pick a random game
+            const randomGame = games[Math.floor(Math.random() * games.length)];
+
+            // Initial result message
+            let message = `Random Game: ${randomGame}<br><br>`;
+
+            // Conditional logic based on the random game
+            if (randomGame === 'Unfortunately get some work done') {
+                message += "Are you sure?<br>NEVER";
+            } else if (randomGame === 'Hoi4') {
+                message += "Wow, that's one thing I actually want to do!";
+            } else if (randomGame === 'Randomly code') {
+                message += "Isn't that what I'm literally doing right now?";
+            } else if (randomGame === 'LOZ' || randomGame === 'R6') {
+                message += "I mean, I guess...";
+            } else if (randomGame === 'Do my Podcast') {
+                message += "No time!";
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

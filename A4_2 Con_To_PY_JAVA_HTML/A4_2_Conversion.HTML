@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut Letter Counter</title>
+    <style>   body {
+        font-family: 𝕰𝖎𝖙𝖍𝖊𝖗, (Edge 12, Firefox 1, Safari 1, Chrome 1, IE 3, Opera 3);
+        margin: 50px;
+        background-color: black;
+        color:chocolate
+    }
+    button {
+        padding: 30px;
+        font-size: 24px;
+        cursor: pointer;
+        color:coral
+    }
+    #result {
+        margin-top: 35px;
+        font-size: 24px;
+        font-weight: bold;
+        color:coral
+    }</style>
+</head>
+<body>
+    <h1>Astronaut Letter Counter</h1>
+
+    <!-- Form to input astronaut's name and letter to count -->
+    <label for="astro_name">Enter the name of the Astronaut: </label>
+    <input type="text" id="astro_name" placeholder="Astronaut's name">
+    <br><br>
+
+    <label for="letter_counting">Enter the letter you want counted: </label>
+    <input type="text" id="letter_counting" maxlength="1" placeholder="Letter">
+    <br><br>
+
+    <button onclick="countLetter()">Count Letter</button>
+
+    <p id="result"></p>
+
+    <script>
+        function countLetter() {
+            // Get the values from the input fields
+            let astro_name = document.getElementById("astro_name").value;
+            let letter_counting = document.getElementById("letter_counting").value;
+
+            // Ensure the letter to count is a single character
+            if (letter_counting.length !== 1) {
+                alert("Please enter exactly one letter to count.");
+                return;
+            }
+
+            // Convert astronaut name to uppercase
+            let upperCaseName = astro_name.toUpperCase();
+            document.getElementById("result").innerHTML = `<strong>${upperCaseName}</strong>`; // Show uppercase name
+
+            let number = 0;
+
+            // Loop through the astronaut name and count the occurrences of the specified letter
+            for (let i = 0; i < astro_name.length; i++) {
+                if (astro_name[i].toLowerCase() === letter_counting.toLowerCase()) {
+                    number++;
+                }
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML += `<br>The letter "${letter_counting}" appeared ${number} times.`;
+        }
+    </script>
+</body>
+</html>
