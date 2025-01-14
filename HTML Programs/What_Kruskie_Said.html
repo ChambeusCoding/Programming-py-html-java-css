@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +17,8 @@
 
         #header-div {
             background-image: url('Logo.png');
-            width: 1600px;
-            height: 1000px;
+            width: 100%;
+            height: 100vh;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -27,15 +28,17 @@
             padding: 10px;
             font-size: 16px;
             cursor: pointer;
-            text-align: center;
             color: coral;
+            position: absolute;
         }
 
         .cube {
             position: absolute;
             width: 50px;
             height: 50px;
-            background-color: rgb(33, 9, 243);
+            background-image: url('ME34.png');
+            width: 75px;
+            background-size: cover;
         }
 
         html,
@@ -52,36 +55,21 @@
 
     <h1>PUSH THE BUTTON KRUSKIE</h1>
 
-    <!-- Button to generate random game -->
-    <button onclick="generateRandomLocation()">BUTTON TIME</button>
-    <div id="header-div">
-        <p style="color: rgb(85, 255, 0); text-align:center;">Also scroll down if you cant see the square:</p>
+    <button id="moveBut" onclick="moveButton()">BUTTON TIME</button>
+    <div id="headerdiv">
+        <p style="color: rgb(85, 255, 0); text-align:center;">Also scroll down if you can't see the button</p>
     </div>
+
     <script>
-        let currentCube = null;
+        function moveButton() {
+            const button = document.getElementById('moveBut');
+            const container = document.getElementById('headerdiv');
 
-        function spawnCube() {
-            const container = document.getElementById('header-div');
-            
-            if (currentCube) {
-                container.removeChild(currentCube);
-            }
+            const xPos = Math.random() * (container.offsetWidth - button.offsetWidth);
+            const yPos = Math.random() * (container.offsetHeight - button.offsetHeight);
 
-            const cube = document.createElement('div');
-            cube.classList.add('cube');
-
-            const xPos = Math.random() * (container.offsetWidth - 50);
-            const yPos = Math.random() * (container.offsetHeight - 50);
-
-            cube.style.left = `${xPos}px`;
-            cube.style.top = `${yPos}px`;
-
-            container.appendChild(cube);
-
-            currentCube = cube;
-        }
-        function generateRandomLocation() {
-            spawnCube();
+            button.style.left = `${xPos}px`;
+            button.style.top = `${yPos}px`;
         }
     </script>
 </body>
