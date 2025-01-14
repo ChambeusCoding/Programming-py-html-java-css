@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSH THE BUTTON</title>
+    <style>
+        body {
+            font-family: 𝕰𝖎𝖙𝖍𝖊𝖗, (Edge 12, Firefox 1, Safari 1, Chrome 1, IE 3, Opera 3);
+            margin: 20px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color:chocolate
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            color:coral
+        }
+        
+        .cube{
+            position:absolute;
+            width:50px;
+            height:50px;
+            background-image:
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PUSH THE BUTTON</h1>
+
+    <!-- Button to generate random game -->
+    <button onclick="generateRandomLocation()">BUTTON TIME</button>
+    <div id="result"></div>
+
+    <script>
+        function spawnCube() {
+            const container = document.getElementById('container');
+            
+            const cube = document.createElement('div');
+            cube.classList.add('cube');
+            
+            const xPos = Math.random() * (container.offsetWidth - 50);
+            const yPos = Math.random() * (container.offsetHeight - 50); 
+            
+            cube.style.left = `${xPos}px`;
+            cube.style.top = `${yPos}px`;
+
+            container.appendChild(cube);
+        }
+    </script>
+</body>
+
+<div id="header-div">
+    <img src="321998.jpg" alt="Sample Image" width="1920" height="1000"></div>
+
+    </html>
