@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Audio</title>
+</head>
+<body>
+    <h2>Scanning</h2>
+    
+    <!-- Password Input and Submit Button -->
+    <input type="password" id="passwordInput" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    
+    <!-- Audio element, hidden initially -->
+    <audio id="audio" src="poibj.mp3" preload="auto"></audio>
+
+    <script>
+        function checkPassword() {
+            const correctPassword = "PointBreak"; // The correct password
+            const userPassword = document.getElementById('passwordInput').value;
+
+            if (userPassword === correctPassword) {
+                // If the password is correct, play the audio
+                document.getElementById('audio').play();
+                alert("Password is correct! Audio is playing.");
+            } else {
+                // If the password is incorrect, show an alert
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>

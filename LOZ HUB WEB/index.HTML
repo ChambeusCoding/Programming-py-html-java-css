@@ -3,39 +3,74 @@
 <head>
     <meta charset="utf-8">
     <title>ChambeusCoding</title>
-    <script>
-        // Function to ask for the password and validate it
-        function checkPassword() {
-            var password = prompt("Shall we play a game?:");
+<head>
+    <style>  
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    #content {
+        display: none;
+    }
+    input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+</style> 
+<body>
+<!-- Password Input and Submit Button -->
+<div id="loginPage">
+    <h2>Scanning</h2>
+    <input type="password" id="passwordInput" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+</div>
 
-            // Check if the password is correct
-            if (password === "********","Pointbreak") {
-                // Reveal the page content and remove background image
-                document.getElementById("content").style.display = "block";
-                document.body.style.backgroundImage = "none"; // Remove background image after login
-            } else {
-                // If the password is incorrect, show an alert
-                alert("Incorrect password! Please try again.");
-                // Ask again
-                checkPassword();
-            }
+<!-- Hidden Content and Audio Element -->
+<div id="content">
+    <h2>Welcome to the Next Page!</h2>
+    <p>Content is now visible.</p>
+</div>
+
+<audio id="audio" src="poibj.mp3" preload="auto"></audio>
+
+<script>
+    function checkPassword() {
+        const correctPassword = "PointBreak"; // Correct password for validation
+        const userPassword = document.getElementById('passwordInput').value;
+
+        if (userPassword === correctPassword) {
+            // If password is correct, hide the login page, reveal the content, and play the audio
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            document.body.style.backgroundImage = "none"; // Remove background image
+            document.getElementById('audio').play(); // Play the audio
+            alert("Password is correct! Audio is playing.");
+        } else {
+            // If password is incorrect, show an alert
+            alert("Incorrect password. Try again.");
         }
+    }
 
-        // Call the function when the page is loaded
-        window.onload = function() {
-            // Initially hide all content
-            document.getElementById("content").style.display = "none";
-            
-            // Set a background image on the body while password is being entered
-            document.body.style.backgroundImage = "url('images/Logo.png')"; // Ensure the file path is correct
-            document.body.style.backgroundSize = "cover"; // Make sure the background image covers the entire screen
-            document.body.style.backgroundPosition = "center"; // Center the background image
-            console.log("Background image set");  // Add log for debugging
-
-            // Ask for the password
-            checkPassword();
-        };
-    </script>
+    // Call this function when the page is loaded
+    window.onload = function() {
+        // Set a background image on the body while password is being entered
+        document.body.style.backgroundImage = "url('images/Logo.png')"; // Ensure the file path is correct
+        document.body.style.backgroundSize = "cover"; // Make sure the background image covers the entire screen
+        document.body.style.backgroundPosition = "center"; // Center the background image
+        console.log("Background image set");  // Add log for debugging
+    };
+</script>
 
     <style type="text/css">
         body {
@@ -128,7 +163,7 @@
         }
 
         #content {
-            display: none;
+            display: all;
         }
 
         html, body, header {
@@ -157,11 +192,10 @@
             font-size: 24px;
         }
     </style>
-</head>
 <body>
     <!-- Content that is hidden initially -->
 
-    <div id="content">
+    <div id="contents">
         <div id="logo-div">
             <img src="Techno_Man.jpg" alt="logo" width="125" height="50">
             <p style="color: rgb(255, 51, 0); text-align:center;">A Chambeus Coding Production:</p>
@@ -461,4 +495,5 @@
         </div>
     </div>
 </body>
+</head>
 </html>
